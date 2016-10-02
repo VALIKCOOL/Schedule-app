@@ -1,0 +1,112 @@
+<div id="groups-list">
+    <div class="header-panel">
+        <h2>Choose group below</h2></div>
+
+    <!-- Accordion -->
+    <div class="panel-group" id="accordion" ng-hide="!groupsCtrl.groupsList.length">
+        <div class="panel" ng-repeat="group in groupsCtrl.groupsList">
+            <div class="panel-heading" data-toggle="collapse" data-parent="#accordion" data-target="{{ '#' + group.name }}" href="" ng-click="groupsCtrl.onCollapse(group.name)"><span class="panel-title" ng-bind="group.name"></span> <span class="panel-title">(<span ng-bind="group.direction"></span>) </span>
+            </div>
+            <div id="{{ group.name }}" class="panel-collapse collapse">
+                <div class="panel-body">
+                    <div class="row row-eq-height bg-primary">
+                        <div class="col-md-10 col-xs-10">
+                            <p>Group name: <b><span ng-bind="group.name" class="group-name"></span></b>
+                                <br> Direction: <b><span ng-bind="group.direction"></span></b>
+                            </p>
+                        </div>
+                        <div class="col-md-2 col-xs-2">
+                            <div class="btn btn-lg app-btn-trash fa fa-trash fa-2x" ng-click="groupsCtrl.deleteGroup($event)"></div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <p class="bg-info"><b>Description:</b> <span ng-bind="group.description"></span> </p>
+                        </div>
+                    </div>
+                    <div class="row offset-inner">
+                        <div class="col-md-6 datepcr1">
+                            <h4 class="bg-info">Select date and press "Display" to show schedule</h4>
+                            <div class="datepicker" ng-model="groupsCtrl.date" datepicker></div>
+                            <div class="datepicker-btn">
+                                <a class="btn btn-lg app-btn-green" href="" role="button" ng-click="groupsCtrl.getDate()">Display</a>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <h4 class="bg-info">
+                                Lessons info
+                            </h4>
+                            <form class="form-horizontal offset-inner">
+                                <div class="form-group">
+                                    <label for="{{ 'lessonInput' + ($index+1) }}" class="col-md-2 control-label">Lesson</label>
+                                    <div class="col-md-10">
+                                        <input id="{{ 'lessonInput' + ($index+1) }}" class="form-control" placeholder="type lesson here" typeahead-editable="false" ng-model="groupsCtrl.lessonObj.selected" uib-typeahead="lesson for lesson in groupsCtrl.lessons | filter:$viewValue | limitTo:8" typeahead-no-results="noResults" typeahead-min-length="2" typeahead-on-select="groupsCtrl.onLessonSelect($item, $model, $label, $event)">
+                                    </div>
+                                </div>
+                            </form>
+                            <div class="warning-panel" ng-if="noResults">
+                                <span><i class="fa fa-exclamation-triangle fa-3x" aria-hidden="true"></i></span><span><p>  Incorrect input data</p></span>
+                            </div>
+                            <table class="table table-striped" ng-hide="!groupsCtrl.lessonObj.selected">
+                                <thead>
+                                    <th>Lesson</th>
+                                    <th>Lessons/week</th>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td ng-bind="groupsCtrl.lessonObj.selected">
+
+                                        </td>
+                                        <td ng-bind="groupsCtrl.lessonCount"></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Warning -->
+    <div class="warning-panel" ng-hide="groupsCtrl.groupsList.length">
+        <span ng-cloak><i class="fa fa-exclamation-triangle fa-4x" aria-hidden="true"></i></span><span><p>Groups not yet added</p></span>
+    </div>
+
+    <!-- Add group form -->
+    <div class="centered-wrap">
+        <div class="btn btn-success btn-lg app-btn-purple" data-toggle="collapse" data-target="#add-form">
+            ADD GROUP
+        </div>
+    </div>
+    <div class="centered-wrap">
+        <form id="add-form" class="collapse form-horizontal" ng-submit="groupsCtrl.submitMyForm()">
+            <div class="form-group">
+                <label for="inputName" class="col-sm-2 control-label">Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="inputName" placeholder="Name" ng-model="groupsCtrl.addFormFields.name" required>
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputDirction" class="col-sm-2 control-label">Direction</label>
+                <div class="col-sm-10">
+                    <select id="inputDirction" ng-model="groupsCtrl.addFormFields.direction" ng-options="direction for direction in groupsCtrl.groupsDirections" class="form-control" required>
+                        <option value="" disabled selected hidden>Choose</option>
+                    </select>
+                    <!--                    <input type="text" class="form-control" id="inputDirction" placeholder="Direction" ng-model="fields.direction" required>-->
+                </div>
+            </div>
+            <div class="form-group">
+                <label for="inputDescription" class="col-sm-2 control-label">Description</label>
+                <div class="col-sm-10">
+                    <textarea class="form-control" id="inputDescription" placeholder="Description" ng-model="groupsCtrl.addFormFields.description" required></textarea>
+                </div>
+            </div>
+            <div class="form-group">
+                <div class="col-sm-offset-2 col-sm-10">
+                    <button type="submit" class="btn btn-lg app-btn-purple">Add</button>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html ng-app="scheduleApp">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Schedule App</title>
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/stylesheet.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/jquery-ui.min.css">
+    <link rel="stylesheet" type="text/css" href="styles/font-awesome.min.css">
+    <link href="./fonts/Roboto-Regular.ttf">
+</head>
+
+<body>
+    <div class="container">
+        <ng-include src="'partials/header.html'"></ng-include>
+        <ui-view></ui-view>
+    </div>
+    <script src="js/build/app.js" type="text/javascript"></script>
+
+</body>
+
+</html>

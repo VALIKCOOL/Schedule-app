@@ -1,0 +1,11 @@
+logs/*
+!.gitkeep
+node_modules/
+app/libs/
+app/bower_components
+app/data/temp.json
+public
+public/
+tmp
+.DS_Store
+.idea

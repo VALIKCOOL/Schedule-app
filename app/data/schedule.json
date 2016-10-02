@@ -1,0 +1,664 @@
+{
+    "groupIds": [
+        {
+            "id": "Ch-035",
+            "days": [
+                {
+                    "date": "Monday",
+                    "lessons": [
+                        {
+                            "time": "08:30-08:40",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "09:00-09:15",
+                            "name": "OOP"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    }
+                ]
+            },
+                {
+                    "date": "Tuesday",
+                    "lessons": [
+                        {                            
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    },
+                        {
+                            "time": "08:30-10:00",
+                            "name": "OOP"   
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Databases"
+                    }
+                ]
+            },
+                {
+                    "date": "Wednesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Thursday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {                            
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    }
+                ]
+            },
+                {
+                    "date": "Friday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            }
+            ]
+        },
+        {
+            "id": "Ch-037",
+            "days": [
+                {
+                    "date": "Monday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "OOP"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    }
+                ]
+            },
+                {
+                    "date": "Tuesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "Testing"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Wednesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Testing"
+                    }
+                ]
+            },
+                {
+                    "date": "Thursday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Testing"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "OOP"
+                    }
+                ]
+            },
+                {
+                    "date": "Friday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "OOP"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Testing"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    }
+                ]
+            }
+            ]
+        },
+        {
+            "id": "Ch-038",
+            "days": [
+                {
+                    "date": "Monday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "OOP"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    }
+                ]
+            },
+                {
+                    "date": "Tuesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Wednesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Thursday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Friday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            }
+            ]
+        },
+        {
+            "id": "Ch-040",
+            "days": [
+                {
+                    "date": "Monday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "OOP"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    }
+                ]
+            },
+                {
+                    "date": "Tuesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Wednesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Thursday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Friday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            }
+            ]
+        },
+        {
+            "id": "Ch-041",
+            "days": [
+                {
+                    "date": "Monday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "OOP"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    }
+                ]
+            },
+                {
+                    "date": "Tuesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Wednesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Thursday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Friday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            }
+            ]
+        },
+        {
+            "id": "Ch-045",
+            "days": [
+                {
+                    "date": "Monday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "OOP"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "Linear Algebra"
+                    }
+                ]
+            },
+                {
+                    "date": "Tuesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Wednesday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Thursday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            },
+                {
+                    "date": "Friday",
+                    "lessons": [
+                        {
+                            "time": "08:30-10:00",
+                            "name": "Databases"
+                    },
+                        {
+                            "time": "10:30-12:00",
+                            "name": "UI"
+                    },
+                        {
+                            "time": "13:30-15:00",
+                            "name": "Math"
+                    },
+                        {
+                            "time": "15:30-17:00",
+                            "name": "UI"
+                    }
+                ]
+            }
+            ]
+        }
+    ]
+}

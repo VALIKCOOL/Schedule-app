@@ -1,0 +1,34 @@
+{
+    "groups": [
+        {
+            "name": "Ch-035",
+            "description": "Development of cross-browser Web pages using HTML and CSS.",
+            "direction": "UI"
+        },
+        {
+            "name": "Ch-037",
+            "description": "Development of automated tests to control product quality.",
+            "direction": "ATQC"
+        },
+        {
+            "name": "Ch-038",
+            "description": "Development of Web-applications using С# and .NET tools.",
+            "direction": ".NET"
+        },
+        {
+            "name": "Ch-040",
+            "description": "Development of Web-applications using Java technologies.",
+            "direction": "JAVA"
+        },
+        {
+            "name": "Ch-041",
+            "description": "SoftServe offers a new highly intensive training Angular Boot Camp.",
+            "direction": "Angular"
+        },
+        {
+            "name": "Ch-045",
+            "description": "Manual software testing, software quality control.",
+            "direction": "MQC"
+        }
+    ]
+}

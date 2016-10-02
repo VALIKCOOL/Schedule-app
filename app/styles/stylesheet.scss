@@ -1,0 +1,352 @@
+$width: 100%;
+$main-border-radius: 4px;
+$header-color: #AB47BC;
+$acrdn-panels-color: #80CBC4;
+$acrdn-header-panel-color: #40a79d;
+$warning-panel-color: #EF9A9A;
+$background-color: #f5f5f5;
+$btn-green-color: #009688;
+$btn-green-active-color: #00796B;
+$btn-prpl-color: #AB47BC;
+$btn-prpl-active-color: #851298;
+html {
+    overflow-y: scroll;
+    font-family: 'Roboto', sans-serif !important;
+    table a {
+        outline: 0 !important;
+    
+    }
+    body {
+        font-size: 1.5em;
+        //background-color: $background-color;
+        background-image: url("../../assets/images/background.png");
+        background-size: cover;
+        .app-btn {
+            border: none;
+            border-radius: $main-border-radius !important;
+            transition: all 0.2s ease;
+            cursor: pointer !important;
+            &:visited {
+                color: white;
+            }
+            &:hover {
+                background-color: black;
+                color: white;
+                border: none;
+                transition: all 0.2s ease;
+                box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.76);
+            }
+        }
+        .app-btn-trash {
+            @extend .app-btn;
+            color: white !important;
+            background-color: none !important;
+            &:visited {
+                color: white !important;
+                background-color: $btn-green-color !important;
+            }
+            &:hover {
+                background-color: $warning-panel-color !important;
+                color: black !important;
+                border: none;
+                transition: all 0.2s ease;
+                box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.76);
+            }
+            &:active {
+                color: white !important;
+                background-color: #eb6262 !important;
+            }
+        }
+        .app-btn-green {
+            @extend .app-btn;
+            color: white !important;
+            background-color: $btn-green-color !important;
+            &:visited {
+                color: white !important;
+                background-color: $btn-green-color !important;
+            }
+            &:hover {
+                background-color: white !important;
+                color: black !important;
+                border: none;
+                transition: all 0.2s ease;
+                box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.76);
+            }
+            &:active {
+                color: white !important;
+                background-color: $btn-green-active-color !important;
+            }
+        }
+        .app-btn-purple {
+            @extend .app-btn;
+            color: white !important;
+            background-color: $btn-prpl-color !important;
+            &:visited {
+                color: white !important;
+                background-color: $btn-prpl-color !important;
+            }
+            &:hover {
+                background-color: white !important;
+                color: black !important;
+                border: none;
+                transition: all 0.2s ease;
+                box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.76);
+            }
+            &:active {
+                color: white !important;
+                background-color: $btn-prpl-active-color !important;
+            }
+        }
+        .jumbotron {
+            color: #f4f4f4;
+            padding: 2em !important;
+            background-color: $header-color;
+            .centered-block {
+                width: $width;
+            }
+            img {
+                width: 70%;
+            }
+            h1 {
+                align-self: flex-end;
+                font-size: 3em;
+                @media screen and (max-width: 768px){
+                    font-size: 2em;
+                }
+            }
+        }
+        #groups-list {
+            padding: 1em;
+            @media screen and (max-width: 768px){
+                padding: 0;
+            }
+            h2 {
+                align-self: flex-end;
+                font-size: 2em;
+                @media screen and (max-width: 768px){
+                    font-size: 1.5em;
+                }
+            }
+            #add-form {
+                button[type='submit'] {
+                    width: 7em;
+                }
+            }
+            .header-panel {
+                border-radius: $main-border-radius;
+                background-color: $acrdn-header-panel-color;
+                h2 {
+                    line-height: 2em;
+                    color: white;
+                    text-align: center;
+                }
+            }
+            .centered-wrap {
+                width: 100%;
+                display: flex;
+                justify-content: center;
+                form {
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 1em;
+                    width: 40em;
+                    padding: 1em;
+                    background-color: white;
+                    border-radius: $main-border-radius;
+                    input {
+                        display: block;
+                    }
+                    input[type='text'] {
+                        width: 100%;
+                    }
+                    textarea {
+                        resize: none;
+                        width: 100%;
+                    }
+                    label {
+                        text-align: left !important;
+                    }
+                }
+            }
+            .panel-collapse>.panel-body {
+                border: none !important;
+            }
+        }
+        #groups-schedule {
+            padding: 1em;
+            margin: 1em;
+            background-color: white;
+            thead th {
+                color: white;
+                background-color: $acrdn-header-panel-color;
+            }
+            table {
+                border: 2px solid black;
+                border-radius: $main-border-radius;
+            }
+            th a {
+                color: white;
+            }
+        }
+    }
+    .full-fiil {
+        [class*='col-']>* {
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .row.row-eq-height {
+        display: flex;
+    }
+    .row.is-flex {
+        display: flex;
+        flex-wrap: wrap;
+        [class*='col-'] {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            align-self: center;
+        }
+    }
+    .panel {
+        border: none !important;
+    }
+    #accordion .panel-heading {
+        color: black !important;
+        background-color: $acrdn-panels-color !important;
+        border: none !important;
+        transition: all 0.2s ease;
+        cursor: pointer !important;
+        border-radius: $main-border-radius !important;
+        &:active {
+            color: white !important;
+            background-color: #009688 !important;
+            transition: all 2s ease;
+            border: none !important;
+        }
+        &:hover {
+            border: none !important;
+            transition: all 0.2s ease;
+            transform: scale(1.1, 1.1);
+            box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.76);
+        }
+        //        box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.76);
+    }
+    .collapsing {
+        border: none !important;
+    }
+    .bg-primary {
+        background-color: #AB47BC !important;
+        padding: 1em;
+    }
+    .bg-info {
+        background-color: #F3E5F5 !important;
+        padding: 1em;
+        margin: 0;
+    }
+    .hideBtnWrap {
+        display: flex;
+        justify-content: center;
+        padding: 1em;
+    }
+    .warning-panel {
+        padding: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: $main-border-radius !important;
+        background-color: $warning-panel-color;
+        margin: 0 auto 20px auto;
+        p {
+            margin: 0;
+            font-size: 2em;
+            line-height: 2em;
+            color: white;
+            text-align: center;
+        }
+    }
+    #dateHeader {
+        padding: 1em;
+    }
+    .ui-state-highlight {
+        background-color: $acrdn-panels-color !important;
+        border: none;
+    }
+    .ui-state-default {
+        @extend .app-btn;
+        color: black !important;
+        &:hover {
+            background-color: white !important;
+            color: black !important;
+            border: none;
+            transform: scale(1.2, 1.2);
+            transition: all 0.2s ease;
+            box-shadow: 0px 5px 20px 0px rgba(0, 0, 0, 0.76);
+        }
+        &:active {
+            color: white !important;
+            background-color: $btn-prpl-active-color !important;
+        }
+    }
+    .ui-state-active {
+        background-color: #AB47BC !important;
+        color: white !important;
+    }
+    .ui-state-default.ui-state-highlight.ui-state-active {
+        background-color: $acrdn-panels-color !important;
+    }
+    .ui-datepicker-next,
+    .ui-datepicker-prev {
+        @extend .app-btn-green;
+    }
+    .datepicker.ui-state-default {
+        @extend .app-btn-purple;
+        color: black !important;
+        background-color: white !important;
+        &:hover {
+            color: black !important;
+            transform: scale(1.2, 1.2);
+        }
+    }
+    .datepicker {
+        @extend .offset-outer;
+        &>div {
+            @extend .centered-block;
+        }
+    }
+    .datepicker-btn {
+        @extend .offset-outer;
+        a {
+            @extend .centered-block;
+            width: 30%;
+            margin: 1em;
+        }
+    }
+    .centered-block {
+        display: block;
+        margin: auto;
+    }
+    .offset-outer {
+        margin: 1em;
+    }
+    .offset-inner {
+        padding: 1em;
+        @media screen and (max-width: 768px){
+            padding: 0.5em;
+        }
+    }
+    [ng\:cloak],
+    [ng-cloak],
+    [data-ng-cloak],
+    [x-ng-cloak],
+    .ng-cloak,
+    .x-ng-cloak {
+        display: none !important;
+    }
+}
+
+.dropdown-menu>.active>a,
+.dropdown-menu>.active>a:focus,
+.dropdown-menu>.active>a:hover {
+    background-color: $btn-green-color !important;
+}
